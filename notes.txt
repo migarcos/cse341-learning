@@ -8,3 +8,6 @@ to start
    Our file example "app.js", need it to run the server
    (Notice than some lines would be added in package.json as "dependencies")
 5. Start to create and code, the "app.js" file.
+
+github repo https://github.com/migarcos/cse341-learning
+running server https://cse341-learning.onrender.com/
