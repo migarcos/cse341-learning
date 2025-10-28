@@ -1,0 +1,10 @@
+to start 
+1. run the command 'npm init --y'
+    (package.json file creation)
+2. configure the main file [ "main" : "filename.js" ] line 5
+3. Go to "scripts" section and add ones example "start":"node filename.js",
+   asociate with the action or command to exceute
+4. Go to the terminal and execute de command "npm install express --save"
+   Our file example "app.js", need it to run the server
+   (Notice than some lines would be added in package.json as "dependencies")
+5. Start to create and code, the "app.js" file.
