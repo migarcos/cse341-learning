@@ -3,22 +3,22 @@ const app = express();
 // added to define routers
 // const router = express.Router();
 
-const lesson1Controller = require("./controllers/lesson1");
+// const lesson1Controller = require("./controllers/lesson1");
 
 // router.get('/home', (req, res) => {
 //     res.send("Hello, This is the .: HOME :. router");
 // });
-app.get('/home', lesson1Controller.homeRoute);
+// app.get('/home', lesson1Controller.homeRoute);
 
 // router.get('/data', (req, res) => {
 //     res.send("Hello, This is the .: DATA :. router");
 // });
-app.get('/data', lesson1Controller.dataRoute);
+// app.get('/data', lesson1Controller.dataRoute);
 
 // router.get('/', (req, res) => {
 //     res.send("Hello, This is the .: INDEX :. router");
 // });
-app.get('/', lesson1Controller.indexRoute);
+// app.get('/', lesson1Controller.indexRoute);
 
 // app.use('/', router);
 
@@ -26,6 +26,8 @@ app.get('/', lesson1Controller.indexRoute);
 // app.get('/', (req, res) => {
 //     res.send("Hello");
 // });
+
+app.use('/', require("./routers"));
 
 app.listen( process.env.PORT || 3000, () => {
     console.log('Web server is listening at port: ' + (process.env.PORT || 3000) );
